@@ -2,7 +2,7 @@ package ru.mirea.task5.opt1;
 
 public class Cup extends Dish{
     private int capacity;
-    boolean hasHandle;
+    private boolean hasHandle;
 
     public Cup(String material, String color, int capacity, boolean hasHandle) {
         super(material, color);
