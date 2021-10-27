@@ -16,7 +16,7 @@ public class opt1 {
 
     static JFrame getFrame() {
         JFrame jFrame = new JFrame();
-        //jFrame.setVisible(true);
+
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(600, 350);
         jFrame.setResizable(false);
@@ -32,41 +32,21 @@ public class opt1 {
         JButton buttonGuess = new JButton("Ответить");
         buttonGuess.setBounds(250,230,100,30);
 
-//        JButton buttonRST = new JButton("New Game");
-//        buttonRST.setBounds(30,30,100,30);
 
         JTextField input = new JTextField(10);
         input.setBounds(200,200,200,20);
 
-//        JTextField setAttempts = new JTextField(10);
-//        setAttempts.setBounds(30,90,100,20);
 
-//        JTextField setMax = new JTextField(10);
-//        setMax.setBounds(30,130,100,20);
-
-//        JLabel textSetAttempts = new JLabel("Set Attempts");
-//        textSetAttempts.setBounds(30,70,100,20);
-
-//        JLabel textSetMax = new JLabel("Set Max Number");
-//        textSetMax.setBounds(30,110,100,20);
-
-        JLabel current = new JLabel("Кол-во попыток - " + countOfAttempt + " Макс число - " + maxNumber);
+        JLabel current = new JLabel("Всего Кол-во попыток - " + countOfAttempt + " Макс число - " + maxNumber);
         current.setBounds(200,10,400,20);
 
-        //setAttempts.setText(String.valueOf(attempts));
-        //setMax.setText(String.valueOf(maxNumber));
 
         jFrame.setLayout(null);
         jFrame.add(current);
         jFrame.add(labelTry);
         jFrame.add(labelGuess);
         jFrame.add(buttonGuess);
-        //jFrame.add(buttonRST);
         jFrame.add(input);
-        //jFrame.add(setAttempts);
-       // jFrame.add(setMax);
-       // jFrame.add(textSetAttempts);
-       // jFrame.add(textSetMax);
         jFrame.setVisible(true);
 
 
@@ -79,7 +59,6 @@ public class opt1 {
                     if (x1 == asnwer) {
                         JOptionPane.showMessageDialog(null, "Поздравляю! Ты отгадал!", "Победа", JOptionPane.INFORMATION_MESSAGE);
                         attempts = countOfAttempt;
-                        //asnwer = RandomNumber();
                         labelGuess.setText("");
                         labelTry.setText("Попыток осталось - " + attempts);
                     } else if (x1 > asnwer) {
@@ -93,7 +72,6 @@ public class opt1 {
                     }
                     if (attempts == 0) {
                         JOptionPane.showMessageDialog(null, "Проиграл!Загаданное число - " + asnwer + "\n Попробуй снова", "Проигрыш", JOptionPane.INFORMATION_MESSAGE);
-                        //asnwer = RandomNumber();
                         attempts = countOfAttempt;
                         labelGuess.setText("");
                         labelTry.setText("Попыток осталось - " + attempts);
