@@ -19,4 +19,9 @@ public class InputList {
             System.out.println("----------");
         }
     }
+    public static void Output(Student ListOfStudent[], int n){
+        for (int i = 0;i < n;i++){
+            System.out.println(ListOfStudent[i].toString());
+        }
+    }
 }
