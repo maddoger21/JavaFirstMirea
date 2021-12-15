@@ -11,7 +11,7 @@ public class MyFrame extends JFrame {
         characterLabel.setHorizontalAlignment(JLabel.CENTER);
         characterLabel.setVerticalAlignment(JLabel.CENTER);
         characterLabel.setOpaque(true);
-        characterLabel.setBounds(350,350);
+        //characterLabel.setBounds(350,350);
 
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
