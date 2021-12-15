@@ -77,9 +77,6 @@ public class Food {
             return false;
         return true;
 
-
-
-
     }
     @Override
     public int hashCode() {
