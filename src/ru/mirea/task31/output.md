@@ -7,3 +7,10 @@
 ## Тест equals
 Метод создает два объекта класса CurrencyInfo, заполняет их одинаковыми значениями времени и валют, а затем сравнивает эти объекты. Тестирование показало, что метод обрабатывается неверно, однако вывод метода полностью совпадает с ожидаемым (рисунок 2). Причина ошибки неизвестна.
 
+![Test](https://github.com/maddoger21/JavaFirstMirea/blob/master/src/ru/mirea/task31/screen1.png?raw=true "Рисунок 1 - Тестирование класса CurrencyInfo")
+
+Рисунок 1 - Тестирование класса CurrencyInfo
+
+![Equals](https://github.com/maddoger21/JavaFirstMirea/blob/master/src/ru/mirea/task31/screen2.png?raw=true "Рисунок 2 - Сравнение выводов метода equals")
+
+Рисунок 2 - Сравнение выводов метода equals

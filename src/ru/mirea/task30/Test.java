@@ -11,10 +11,7 @@ public class Test {
     public void addCurrency() {
         CurrencyInfo currencyInfo = new CurrencyInfo(new Date());
         currencyInfo.addCurrency("RUB", 1.0);
-        currencyInfo.addCurrency("USD", 73.47);
         currencyInfo.addCurrency("CHF", 79.62);
-        currencyInfo.addCurrency("JPY", 0.64);
-        currencyInfo.addCurrency("UAH", 2.72);
 
         Assert.assertNotNull(currencyInfo.getCurrencies());
     }
